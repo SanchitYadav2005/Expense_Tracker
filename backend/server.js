@@ -3,12 +3,15 @@ const app = express();
 require("dotenv").config();
 const mongoose = require("mongoose");
 const port = process.env.PORT;
+const expenseRoutes = require('./routes/exprenseRoutes')
 
 app.use(express.json());
 
 app.get('/', (requrest,response)=>{
     response.json({message: "hello from the backend"})
 })
+
+app.use('/api/expenses/', expenseRoutes);
 
 mongoose.connect(process.env.MONGO_URL)
     .then(()=>{
