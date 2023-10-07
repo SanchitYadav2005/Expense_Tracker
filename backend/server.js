@@ -4,8 +4,10 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const port = process.env.PORT;
 const expenseRoutes = require('./routes/exprenseRoutes')
+const cors = require('cors');
 
 app.use(express.json());
+app.use(cors())
 
 app.get('/', (requrest,response)=>{
     response.json({message: "hello from the backend"})
