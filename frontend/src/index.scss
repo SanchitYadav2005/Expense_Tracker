@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+$font: "Young Serif", serif;
+$color: #00bbf9;
+$color2: #00f5d4;
+nav {
+  font-size: 2em;
+  text-align: center;
+  background: -webkit-linear-gradient(top right, $color2, $color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 0.5em;
+  font-family: $font;
+  // color: $color;
+  cursor: pointer;
+}
