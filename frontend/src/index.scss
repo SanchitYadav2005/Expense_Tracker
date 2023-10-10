@@ -1,15 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 $font: "Young Serif", serif;
+$font2: 'Roboto', sans-serif;
 $color: #00bbf9;
 $color2: #00f5d4;
+$color3: #a2d2ff;
+
+h1{
+  text-align: center;
+  margin-top: 3em;
+  font-family: $font2;
+  font-size: 5em;
+}
+
 nav {
   font-size: 2em;
   text-align: center;
   background: -webkit-linear-gradient(top right, $color2, $color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: 0.5em;
   font-family: $font;
+  margin-top: 0.5em;
   // color: $color;
   cursor: pointer;
+}
+
+
+.expense{
+  font-family: $font2;
+  border: 3px solidf $color3;
+  background-color: $color3;
+  width: 50%;
+  padding: 1em 3em 1em 3em;
+  margin-left: 20%;
+  margin-top: 4em;
+  border-radius: 30px;
+  span{
+    font-weight: lighter;
+    color: white;
+    margin-left: 2rem;
+  }
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.3s all;
+  
+
+  h2,h3,h4{
+    color: #023047;
+  }
+  
+  
+}
+.expense:hover{
+  box-shadow: none;
 }
