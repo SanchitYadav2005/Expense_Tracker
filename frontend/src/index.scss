@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 $font: "Young Serif", serif;
-$font2: 'Roboto', sans-serif;
+$font2: "Roboto", sans-serif;
 $color: #00bbf9;
 $color2: #00f5d4;
 $color3: #a2d2ff;
 
-h1{
+h1 {
   text-align: center;
   margin-top: 3em;
   font-family: $font2;
@@ -25,17 +25,16 @@ nav {
   cursor: pointer;
 }
 
-
-.expense{
+.expense {
   font-family: $font2;
   border: 3px solidf $color3;
   background-color: $color3;
   width: 50%;
   padding: 1em 3em 1em 3em;
-  margin-left: 20%;
+  margin-left: 23%;
   margin-top: 4em;
   border-radius: 30px;
-  span{
+  span {
     font-weight: lighter;
     color: white;
     margin-left: 2rem;
@@ -43,14 +42,31 @@ nav {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 0.3s all;
-  
 
-  h2,h3,h4{
+  h2,
+  h3,
+  h4 {
     color: #023047;
   }
-  
-  
 }
-.expense:hover{
+.expense:hover {
+  box-shadow: none;
+}
+
+.btn {
+  margin-top: 5em;
+  padding: 1em 3em 1em 3em;
+  background-color: $color;
+  border: 2px solid $color;
+  margin-left: 44%;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s all;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.btn:hover {
   box-shadow: none;
 }
