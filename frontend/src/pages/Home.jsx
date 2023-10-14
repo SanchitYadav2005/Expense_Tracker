@@ -31,6 +31,7 @@ function Home() {
     return (
       <>
         <ExpneseDetails expense={expense} />
+        <a href="/"><button className="bn29">Button</button></a>
       </>
     );
   } else {
