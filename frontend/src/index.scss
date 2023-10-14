@@ -137,3 +137,64 @@ nav {
   width: 115%;
   height: 115%;
 }
+
+.create {
+  font-family: $font2;
+  h3 {
+    font-size: 2em;
+    font-family: $font;
+    text-align: center;
+    background: -webkit-linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  label{
+    color: white;
+    font-size: 1.5em;
+  }
+  input{
+    padding: 0.5em 5em 0.5em 0.1em;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    -moz-appearance: textfield;
+    color: white;
+    font-size: 1.2em;
+  }
+  input:focus{
+    outline: none;
+  }
+  .container{
+    margin-bottom: 3em;
+  }
+  .main{
+    width: fit-content;
+    padding: 3em 3em 3em ;
+    margin-left: 34%;
+    border-radius: 30px;
+    background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  }
+  .btn{
+    margin-top: 2em;
+  }
+}
