@@ -8,18 +8,21 @@ function Form() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const expense = { title, spend, borrow };
-    const response = await axios.post("http://localhost:4000/api/expenses/", {
-      body: JSON.stringify(expense),
-      headers: {
-        "Content-type": "application/json",
-      },
-    });
-    const json = await response.json();
-    if (json) {
-      console.log("new entry successfully added!!");
-    } else {
-      console.log("error");
-    }
+    try {
+  const response = await axios.post("http://localhost:4000/api/expenses/", expense);
+  // Handle the successful response here
+  console.log("POST request was successful");
+  console.log("Response data:", response.data);
+
+  // Add your code here for what you want to do after the completion.
+} catch (error) {
+  // Handle any errors that occurred during the request
+  console.error("An error occurred:", error);
+
+  // Add your error handling code here.
+}
+
+
   };
   return (
     <form className="create" onSubmit={handleSubmit}>
@@ -52,7 +55,7 @@ function Form() {
       </div>
       </div>
       
-      <button className="bn29 btn">Submit</button>
+      <button className="bn29 btn" onClick={()=> window.location.reload()}>Submit</button>
     </form>
   );
 }
