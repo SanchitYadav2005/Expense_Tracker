@@ -141,7 +141,8 @@ nav {
 .create {
   font-family: $font2;
   h3 {
-    font-size: 2em;
+    font-size: 2.5em;
+    margin-top: 3em;
     font-family: $font;
     text-align: center;
     background: -webkit-linear-gradient(
@@ -158,10 +159,6 @@ nav {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  label{
-    color: white;
-    font-size: 1.5em;
-  }
   input{
     padding: 0.5em 5em 0.5em 0.1em;
     background: transparent;
@@ -174,13 +171,16 @@ nav {
   input:focus{
     outline: none;
   }
+  ::placeholder{
+    color: white;
+  }
   .container{
     margin-bottom: 3em;
   }
   .main{
     width: fit-content;
     padding: 3em 3em 3em ;
-    margin-left: 34%;
+    margin-left: 33%;
     border-radius: 30px;
     background: linear-gradient(
     60deg,
