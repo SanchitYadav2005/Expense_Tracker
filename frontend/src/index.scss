@@ -198,3 +198,59 @@ nav {
     margin-top: 2em;
   }
 }
+
+
+.login-form{
+  font-family: $font2;
+  width: fit-content;
+    padding: 3em 3em 3em ;
+    margin-left: 33%;
+    
+   background-color:transparent;
+   border: 2px solid;
+   border-image:   linear-gradient(to right,#f79533,
+   #f37055,
+   #ef4e7b,
+   #a166ab,
+   #5073b8,
+   #1098ad,
+   #07b39b,
+   #6fba82)8;
+   border-radius: 30px;
+   margin-top: 9%;
+  input{
+    padding: 0.5em 5em 0.5em 0.1em;
+    display: block;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    -moz-appearance: textfield;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 3em;
+  }
+  input:focus{
+    outline: none;
+  }
+  .login-btn{
+    background: -webkit-linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
+    border: none;
+    font-family: $font2;
+    font-size: 1em;
+    color: white;
+    padding: 0.5em 3em 0.5em 3em;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 30%;
+  }
+}
