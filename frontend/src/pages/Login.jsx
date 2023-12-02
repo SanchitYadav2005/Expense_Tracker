@@ -19,7 +19,7 @@ function Login() {
   }
 
   return (
-    <form action="" onSubmit={handleSubmit} className="login-form">
+    <form onSubmit={handleSubmit} className="login-form">
       <input
         type="email"
         name="email"
